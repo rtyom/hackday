@@ -1,0 +1,8 @@
+{
+  "name": "bower-gulp-less-priject",
+  "version": "0.0.1",
+  "main": "html/index.ejs",
+  "dependencies": {
+    "jquery": ">= 2.1.3"
+  }
+}

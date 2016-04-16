@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+
+<html lang="en-EN">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--
+    TODO
+    no scale no resize no zoom for mob devices
+    if adaptive - enable, else - remove
+  -->
+  <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"> -->
+  <!-- IE no comp mode -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta http-equiv="msthemecompatible" content="no">
+  <!-- Force cleartype -->
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- No phone num detection -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+  <!-- Meta -->
+  <title>2-3 мая HackDay 2015 в Алматы </title>
+  <meta name="description" content="крупнейший в СНГ ежегодный Фестиваль идей, где молодые специалисты в креативной и неформальной среде превращают свои идеи в работающие стартапы, приглашает тебя!">
+
+  <meta property="og:title" content="2-3 мая HackDay 2015 в Алматы" />
+  <meta property="og:description" content="крупнейший в СНГ ежегодный Фестиваль идей, где молодые специалисты в креативной и неформальной среде превращают свои идеи в работающие стартапы, приглашает тебя!" />
+  <meta property="og:image" content="img/social.jpg" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+
+  <script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-43077912-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
+
+<body>
+
+  <div style="position:absolute; left: -99999px;">
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 958883264;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/958883264/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter29863544 = new Ya.Metrika({id:29863544,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/29863544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  </div>
+  
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<form id="popup_reg" class="white-popup-block mfp-hide">
+	<div class="title">Секция: <mark></mark></div>
+
+	<fieldset style="border:0;">
+		<p>Регистрация на HackDay<br /> является обязательной для всех участников.</p>
+		<ol>
+			<li>	
+				<input id="email" name="email" type="text"  placeholder="E-mail" autofocus="">
+				<span id="email_err" class="throw_error"></span>
+			</li>
+			<li>
+				<input id="submit" type="submit" value="Зарегистрировать проект" />
+				<div id="error_msg"></div>
+			</li>
+			<li>После регистрации на указанный E-mail прийдет пароль для регистрации.</li>
+		</ol>
+	</fieldset>
+
+	<div id="success"><b>Спасибо!</b><br /> На ваш E-mail отправлено письмо с паролем для дальнейшей регистрации проекта.!</div>
+</form>
+<form id="popup_auth" class="white-popup-block mfp-hide">
+	<div class="title">Авторизация</div>
+	<fieldset style="border:0;">
+		<ol>
+			<li>	
+				<input id="email" name="email" type="email" required="" placeholder="E-mail"  autofocus="" />
+				<span id="email_err" class="throw_error"></span>
+			</li>
+			<li>	
+				<input id="password" name="password" type="password" required="" placeholder="Пароль" />
+				<span id="password_err" class="throw_error"></span>
+			</li>			
+			<li>
+			<li>
+				<input type="checkbox" class="checkbox" id="save" />
+				<label id="save_label" for="checkbox">Запомнить меня</label> 
+			</li>
+				<!-- <input type="button" name="section_name" id="section_name" value="" /> -->
+				<input id="submit" type="submit" value="Войти" />
+				<div id="error_msg"></div>
+			</li>
+		</ol>
+	</fieldset>
+	<div class="more_links">
+		<a href="#">Забыли пароль</a>
+		<a href="#popup_reg" data-text="Любая" class="section__go">Зарегистрировать проект</a></a>
+	</div>
+		<div id="success">Вход выполнен!</div>
+</form>
+
+  <header class="header">
+    
+    <div class="wrapper">
+      <a href="/"><i class="header__logo"></i></a>
+
+
+
+      <div class="header__nav">
+
+      <ul id="menu">
+        <li><a href="#">Секции</a></li>
+        <li>
+          <a href="#">Прoграмма</a>
+          <ul>
+            <li><a href="#">Mio profilo 1 erfer rere</a></li>
+            <li><a href="#">Mio profilo 2 e</a></li>
+            <li><a href="#">Mio profilo 3</a></li>
+            <li><a href="#">Mio profilo 4 eerr</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Участники</a></li>
+        <li><a href="#">Спикеры</a></li>
+      </ul>
+            
+        <div class="header__social social">
+          <a target="_blank" href="https://www.facebook.com/hackdaykz" class="social__fb"></a>
+          <a target="_blank" href="https://vk.com/hackdayalmaty" class="social__vk"></a>
+          <!-- <a target="_blank" href="" class="social__ig"></a> -->
+        </div>
+
+        <span class="social__tag">#hackdaykz</span>
+        <a id="auth" href="#popup_auth" class="social__tag social__tag--red">Личный кабинет</a>
+      
+        <!-- <div class="header__lang">
+          <span>KZ</span>
+          <a href="ru.html">RU</a>
+        </div> -->
+      
+      </div>
+    </div>
+
+
+  </header><!-- /.header --> 
+
+
+
+  <main class="body">
+
+    <section class="subpage_head">
+      <div class="wrapper">
+        
+        <div class="title">Регистрация на HackDay 2016
+        <p>2-3 мая Алматы, Almaty Towers,<br />
+        Коворкинг "Бизнес Фабрика" Байзакова 280.</p></div>
+
+      </div>
+    </section>
+
+
+    <section class="cabinet">
+      <div class="wrapper">
+
+        <div id="form_success" class="isa_success">
+         <i class="fa fa-check"></i>
+         Данные успешно сохранены.
+       </div>
+
+       <div id="form_error" class="isa_error">
+         <i class="fa fa-times-circle"></i>
+         Ошибка!<br />
+         <div id="form_error_msg"></div>
+       </div>
+
+       <form id="cab_step2">
+        <fieldset>
+
+          <legend class="title"><span>Шаг 2.</span> Регистрация участников проекта</legend>
+
+          <p class="notify">В одном проекте могут принять участие не более 4х человек</p>
+
+          <div style="clear: both;"></div>
+
+          <div class="redboard">
+
+            <div class="editlinks">
+              <a href="cabinet.html">К сводным данным</a> | <a href="#" onClick="return window.confirm('Вы действительно уверены, что хотите полностью удалить этого участника?');">Удалить участника</a>
+            </div>
+
+            <div style="clear: both;">
+
+             <div class="halfsect">
+              <label for="name">ФИО участника</label> 
+              <input id="name" name="name" type="text"></input>
+            </div>
+
+            <div id="cap" class="halfsect">              
+              <input type="checkbox" class="checkbox" name="is_captain" id="is_captain" />
+              <label for="is_captain" id="is_captain_label">Капитан команды</label> 
+            </div>
+
+          </div><div style="clear: both;">
+
+          <div class="halfsect">
+            <label for="email">Электронная почта</label> 
+            <input id="email" name="email" type="text"></input>
+          </div>
+
+          <div class="halfsect">
+            <label for="proj_name">Телефон</label> 
+            <input id="phone" name="phone" type="text"></input>
+          </div>
+        </div>      
+
+        <div style="clear: both;">
+
+          <div class="tiercesect">
+            <label for="school_name">ВУЗ/Школа</label> 
+            <input id="school_name" name="school" type="text"></input>
+          </div>
+
+          <div class="tiercesect">
+            <label for="country">Страна</label> 
+            <input id="country" name="country" type="text"></input>
+          </div>
+
+          <div class="tiercesect">
+            <label for="city">Город</label> 
+            <input id="city" name="city" type="text"></input>
+          </div>
+
+        </div>
+        <input id="submit" type="submit" value="Сохранить данные" />
+      </div>
+
+      <div class="add_link"><a href="#">+ Добавить участника</a></div>
+
+
+      <p class="bottext">Нажав кнопку вы создадите профиль в базе HackDay. Он будет хранить информацию об участниках и проекте.</p>
+
+    </fieldset>
+  </form>
+
+        </div>
+      </section>
+
+
+    <section class="action">
+      <div class="action__tx">
+        <mark>Если у тебя нет команды</mark>
+        <p>То ты можешь найти ее на HackDay.  Жми на кнопку и регистрируйся! </p>
+        <a target="_blank" href="http://hackday.ru/almaty2015">Зарегистрироваться</a>
+      </div>
+      <i class="action__man"></i>
+    </section>
+
+
+
+    <section class="groups">
+      <div class="wrapper">
+        <div class="groups__title">
+           Подписывайся на HackDay и будь <br />
+          в центре событий
+        </div>
+        <div class="groups__box">
+
+          <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+          <!-- VK Widget -->
+          <div id="vk_groups"></div>
+          <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 0, width: "480", height: "225", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 51905207);
+          </script>
+
+        </div>
+        <div class="groups__box">
+          <div class="fb-page" data-href="https://www.facebook.com/hackdaykz" data-width="480" data-height="225" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/hackdaykz"><a href="https://www.facebook.com/hackdaykz">HackDay Kazakhstan</a></blockquote></div></div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- /.content -->
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__col footer__col-1">
+        <i class="footer__logo"></i>
+        <span class="footer__copy">© HackDay Kazakhstan, 2015 </span>
+      </div>
+      <div class="footer__col footer__col-2">
+        <div class="footer__phones">
+          <mark>Контакты</mark>
+          <p>(727) 244 51 25,</p> 
+          <p>(727) 330 85 62</p>
+        </div>
+      </div>
+      <div class="footer__col footer__col-3">
+        <div class="footer__social">
+          <a target="_blank" href="http://hackday.ru/almaty2015">hackday2015.kz</a>
+          <div class="social">
+            <a target="_blank" href="https://www.facebook.com/hackdaykz" class="social__fb"></a>
+            <a target="_blank" href="https://vk.com/hackdayalmaty" class="social__vk"></a>
+            <!-- <a href="" class="social__ig"></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="footer__man">
+        <span><span>Регистрация <br> на HackDay</span></span>
+      </div>
+    </div>
+  </footer><!-- /.footer -->
+
+
+
+  <!-- Vendor JS -->
+  <script src="js/vendor.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="js/all.js"></script>
+
+
+</body>
+
+</html>

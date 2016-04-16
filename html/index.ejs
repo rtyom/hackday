@@ -1,9 +1,11 @@
 <%- include parts/head.ejs %>
+<%- include parts/popup_reg.ejs %>
+<%- include parts/popup_auth.ejs %>
 
   <header class="header">
     
     <div class="wrapper">
-      <i class="header__logo"></i>
+      <a href="/"><i class="header__logo"></i></a>
 
 
 
@@ -31,7 +33,7 @@
         </div>
 
         <span class="social__tag">#hackdaykz</span>
-        <!-- <a href="http://yvision.kz/hackday" target="_blank" class="social__tag social__tag--red">HackDay 2013 – 2014</a> -->
+        <a id="auth" href="#popup_auth" class="social__tag social__tag--red">Личный кабинет</a>
       
         <!-- <div class="header__lang">
           <span>KZ</span>
@@ -40,7 +42,6 @@
       
       </div>
     </div>
-
 
   </header><!-- /.header --> 
 
@@ -117,7 +118,7 @@
               <p>и в итоге, не в состоянии себя контролировать.</p>
             </div> -->
 
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+            <a href="#popup_reg" data-text="Информационные технологии" class="section__go">Зарегистрироваться</a>
 
           </div>
 
@@ -130,7 +131,7 @@
               </div>          
             </div>
 
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+            <a href="#popup_reg" data-text="Контент и медиа" class="section__go">Зарегистрироваться</a>
 
           </div>
 
@@ -143,7 +144,7 @@
               </div>          
             </div>
 
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+            <a href="#popup_reg" data-text="Кино и видео" class="section__go">Зарегистрироваться</a>
           </div>
         
         </div>
@@ -159,7 +160,7 @@
               </div>          
             </div>
 
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+            <a href="#popup_reg" data-text="Мобильные Приложения" class="section__go">Зарегистрироваться</a>
           </div>
           
           <div class="section">
@@ -171,7 +172,7 @@
               </div>          
             </div>
 
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+            <a href="#popup_reg" data-text="Фотография" class="section__go">Зарегистрироваться</a>
           </div>
 
           <div class="section">
@@ -184,7 +185,7 @@
               </div>          
             </div>
 
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+            <a href="#popup_reg" data-text="Дизайн и анимация" class="section__go">Зарегистрироваться</a>
           </div>
         </div>
 
@@ -200,7 +201,7 @@
               </div>          
             </div>
             
-            <a target="_blank" href="http://hackday.ru/almaty2015" class="section__go">Зарегистрироваться</a>
+             <a href="#popup_reg" data-text="Новая категория" class="section__go">Зарегистрироваться</a>
           </div>   
 
         </div>
@@ -290,22 +291,22 @@
           <div class="news__line">
             <div class="news_item">
             <img src="img/photos/6.jpg">
-            <a href="#">Новость 1</a>
+            <a href="news_item.html">Новость 1</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laborum, porro ex optio quibusdam atque voluptatibus voluptatem hic, beatae totam eveniet at, fuga ipsa officia voluptatum mollitia. Molestiae, sit, eum.</p>
             </div>
             <div class="news_item">
             <img src="img/photos/5.jpg">
-           <a href="#">Новость 2</a>
+           <a href="news_item.html">Новость 2</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laborum, porro ex optio quibusdam atque voluptatibus voluptatem hic, beatae totam eveniet at, fuga ipsa officia voluptatum mollitia. Molestiae, sit, eum.</p>
             </div>
             <div class="news_item">
             <img src="img/photos/4.jpg">
-           <a href="#">Новость 3</a>
+           <a href="news_item.html">Новость 3</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laborum, porro ex optio quibusdam atque voluptatibus voluptatem hic, beatae totam eveniet at, fuga ipsa officia voluptatum mollitia. Molestiae, sit, eum.</p>
             </div>
           </div>
 
-          <a target="_blank" href="#" class="news__go">Больше новостей</a>
+          <a href="news.html" class="news__go">Больше новостей</a>
 
         </div>
       </section>

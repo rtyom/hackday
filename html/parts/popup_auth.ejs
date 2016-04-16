@@ -1,0 +1,29 @@
+<form id="popup_auth" class="white-popup-block mfp-hide">
+	<div class="title">Авторизация</div>
+	<fieldset style="border:0;">
+		<ol>
+			<li>	
+				<input id="email" name="email" type="email" required="" placeholder="E-mail"  autofocus="" />
+				<span id="email_err" class="throw_error"></span>
+			</li>
+			<li>	
+				<input id="password" name="password" type="password" required="" placeholder="Пароль" />
+				<span id="password_err" class="throw_error"></span>
+			</li>			
+			<li>
+			<li>
+				<input type="checkbox" class="checkbox" id="save" />
+				<label id="save_label" for="checkbox">Запомнить меня</label> 
+			</li>
+				<!-- <input type="button" name="section_name" id="section_name" value="" /> -->
+				<input id="submit" type="submit" value="Войти" />
+				<div id="error_msg"></div>
+			</li>
+		</ol>
+	</fieldset>
+	<div class="more_links">
+		<a href="#">Забыли пароль</a>
+		<a href="#popup_reg" data-text="Любая" class="section__go">Зарегистрировать проект</a></a>
+	</div>
+		<div id="success">Вход выполнен!</div>
+</form>

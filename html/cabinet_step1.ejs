@@ -1,0 +1,158 @@
+<%- include parts/head.ejs %>
+<%- include parts/popup_reg.ejs %>
+<%- include parts/popup_auth.ejs %>
+
+  <header class="header">
+    
+    <div class="wrapper">
+      <a href="/"><i class="header__logo"></i></a>
+
+
+
+      <div class="header__nav">
+
+      <ul id="menu">
+        <li><a href="#">Секции</a></li>
+        <li>
+          <a href="#">Прoграмма</a>
+          <ul>
+            <li><a href="#">Mio profilo 1 erfer rere</a></li>
+            <li><a href="#">Mio profilo 2 e</a></li>
+            <li><a href="#">Mio profilo 3</a></li>
+            <li><a href="#">Mio profilo 4 eerr</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Участники</a></li>
+        <li><a href="#">Спикеры</a></li>
+      </ul>
+            
+        <div class="header__social social">
+          <a target="_blank" href="https://www.facebook.com/hackdaykz" class="social__fb"></a>
+          <a target="_blank" href="https://vk.com/hackdayalmaty" class="social__vk"></a>
+          <!-- <a target="_blank" href="" class="social__ig"></a> -->
+        </div>
+
+        <span class="social__tag">#hackdaykz</span>
+        <a id="auth" href="#popup_auth" class="social__tag social__tag--red">Личный кабинет</a>
+      
+        <!-- <div class="header__lang">
+          <span>KZ</span>
+          <a href="ru.html">RU</a>
+        </div> -->
+      
+      </div>
+    </div>
+
+
+  </header><!-- /.header --> 
+
+
+
+  <main class="body">
+
+    <section class="subpage_head">
+      <div class="wrapper">
+        
+        <div class="title">Регистрация на HackDay 2016
+        <p>2-3 мая Алматы, Almaty Towers,<br />
+        Коворкинг "Бизнес Фабрика" Байзакова 280.</p></div>
+
+      </div>
+    </section>
+
+
+    <section class="cabinet">
+      <div class="wrapper">
+
+
+        <div id="form_success" class="isa_success">
+         <i class="fa fa-check"></i>
+          Данные успешно сохранены.
+       </div>
+
+        <div id="form_error" class="isa_error">
+         <i class="fa fa-times-circle"></i>
+          Ошибка!<br />
+          <div id="form_error_msg"></div>
+       </div>
+
+       <form id="cab_step1">
+        <fieldset>
+
+
+          <legend class="title"><span>Шаг 1.</span> Информация о проекте</legend>
+
+          <div class="whiteboard">
+
+            <div class="editlinks">
+              <a href="cabinet.html">К сводным данным</a> | <a href="#" onClick="return window.confirm('Вы действительно уверены, что хотите полностью удалить этот проект?');">Удалить проект</a>
+            </div>
+
+            <div class="halfsect">
+              <label for="team_name">Секция</label> 
+              <select name="section">
+                <option selected>Секция 1</option>
+                <option>Секция 2</option>
+                <option>Секция 3</option>
+              </select>
+
+              <label for="team_name">Название команды</label> 
+              <input id="team_name" name="team_name" type="text"></input>
+
+              <label for="proj_name">Название проекта</label> 
+              <input id="proj_name" name="proj_name" type="text"></input>
+            </div>
+
+            <div class="halfsect">
+              <label for="proj_descr">Краткое описание проекта</label>
+              <textarea id="proj_descr" name="proj_descr"></textarea>
+            </div>
+
+            <input id="submit" type="submit" value="Сохранить" />
+
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+
+    <section class="action">
+      <div class="action__tx">
+        <mark>Если у тебя нет команды</mark>
+        <p>То ты можешь найти ее на HackDay.  Жми на кнопку и регистрируйся! </p>
+        <a target="_blank" href="http://hackday.ru/almaty2015">Зарегистрироваться</a>
+      </div>
+      <i class="action__man"></i>
+    </section>
+
+
+
+    <section class="groups">
+      <div class="wrapper">
+        <div class="groups__title">
+           Подписывайся на HackDay и будь <br />
+          в центре событий
+        </div>
+        <div class="groups__box">
+
+          <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+          <!-- VK Widget -->
+          <div id="vk_groups"></div>
+          <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 0, width: "480", height: "225", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 51905207);
+          </script>
+
+        </div>
+        <div class="groups__box">
+          <div class="fb-page" data-href="https://www.facebook.com/hackdaykz" data-width="480" data-height="225" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/hackdaykz"><a href="https://www.facebook.com/hackdaykz">HackDay Kazakhstan</a></blockquote></div></div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- /.content -->
+
+
+<%- include parts/footer.ejs %>

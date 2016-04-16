@@ -1,0 +1,100 @@
+// Clearfix
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
+
+// Background image
+.bg (@image:'empty.jpg', @position: top left) {
+  background-image: url("@{images_location}@{image}");
+  background-repeat: no-repeat;
+  background-position: @position;
+}
+.bg-r (@image:'empty.jpg', @position: top left) {
+  background-image: url("@{images_location}@{image}");
+  background-repeat: repeat;
+  background-position: @position;
+}
+.bg-ry (@image:'empty.jpg', @position: top left) {
+  background-image: url("@{images_location}@{image}");
+  background-repeat: repeat-y;
+  background-position: @position;
+}
+.bg-rx (@image:'empty.jpg', @position: top left) {
+  background-image: url("@{images_location}@{image}");
+  background-repeat: repeat-x;
+  background-position: @position;
+}
+
+// Sprite
+.sprite (@width:0, @height:0, @bg-pos-x: 99, @bg-pos-y: 99) {
+	display:inline-block;
+  vertical-align: middle;
+	width: (@width + 0px);
+	height: (@height + 0px);
+	background: url(@sprite_location) (@bg-pos-x * (-10px)) (@bg-pos-y * (-10px)) no-repeat;
+}
+.sprite-pos (@bg-pos-x: 99, @bg-pos-y: 99) {
+  background-position: (@bg-pos-x * (-10px)) (@bg-pos-y * (-10px));
+}
+
+
+// Arrows figures
+.arrow (@size:5) {
+  border: (@size - 1px) solid transparent;
+  display: inline-block;
+}
+.arrow-l (@size:5, @color:inherit) {
+  .arrow(@size);
+  border-right-color: @color;
+  border-right-width: (@size*1px);
+}
+.arrow-r (@size:5, @color:inherit) {
+  .arrow(@size);
+  border-left-color: @color;
+  border-left-width: (@size*1px);
+}
+.arrow-t (@size:5, @color:inherit) {
+  .arrow(@size);
+  border-bottom-color: @color;
+  border-bottom-width: (@size*1px);
+}
+.arrow-b (@size:5, @color:inherit) {
+  .arrow(@size);
+  border-top-color: @color;
+  border-top-width: (@size*1px);
+  vertical-align: (-@size / 2px);
+}
+
+
+// Position
+.pos-lt (@pos-x: 0, @pos-y: 0) {
+  left:(@pos-x + 0px);
+  top:(@pos-y + 0px);
+  right: auto;
+  bottom: auto;
+}
+.pos-rt (@pos-x: 0, @pos-y: 0) {
+  right:(@pos-x + 0px);
+  top:(@pos-y + 0px);
+  left: auto;
+  bottom: auto;
+}
+.pos-lb (@pos-x: 0, @pos-y: 0) {
+  left:(@pos-x + 0px);
+  bottom:(@pos-y + 0px);
+  right: auto;
+  top: auto;
+}
+.pos-rb (@pos-x: 0, @pos-y: 0) {
+  right:(@pos-x + 0px);
+  bottom:(@pos-y + 0px);
+  left: auto;
+  top: auto;
+}

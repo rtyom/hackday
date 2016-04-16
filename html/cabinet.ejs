@@ -1,0 +1,221 @@
+<%- include parts/head.ejs %>
+<%- include parts/popup_reg.ejs %>
+<%- include parts/popup_auth.ejs %>
+
+  <header class="header">
+    
+    <div class="wrapper">
+      <a href="/"><i class="header__logo"></i></a>
+
+
+
+      <div class="header__nav">
+
+      <ul id="menu">
+        <li><a href="#">Секции</a></li>
+        <li>
+          <a href="#">Прoграмма</a>
+          <ul>
+            <li><a href="#">Mio profilo 1 erfer rere</a></li>
+            <li><a href="#">Mio profilo 2 e</a></li>
+            <li><a href="#">Mio profilo 3</a></li>
+            <li><a href="#">Mio profilo 4 eerr</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Участники</a></li>
+        <li><a href="#">Спикеры</a></li>
+      </ul>
+            
+        <div class="header__social social">
+          <a target="_blank" href="https://www.facebook.com/hackdaykz" class="social__fb"></a>
+          <a target="_blank" href="https://vk.com/hackdayalmaty" class="social__vk"></a>
+          <!-- <a target="_blank" href="" class="social__ig"></a> -->
+        </div>
+
+        <span class="social__tag">#hackdaykz</span>
+        <a id="auth" href="#popup_auth" class="social__tag social__tag--red">Личный кабинет</a>
+      
+        <!-- <div class="header__lang">
+          <span>KZ</span>
+          <a href="ru.html">RU</a>
+        </div> -->
+      
+      </div>
+    </div>
+
+
+  </header><!-- /.header --> 
+
+
+
+  <main class="body">
+
+    <section class="subpage_head">
+      <div class="wrapper">
+        
+        <div class="title">Регистрация на HackDay 2016
+        <p>2-3 мая Алматы, Almaty Towers,<br />
+        Коворкинг "Бизнес Фабрика" Байзакова 280.</p></div>
+
+      </div>
+    </section>
+
+
+    <section class="cabinet">
+      <div class="wrapper">
+
+        <div class="whiteboard">
+
+          <fieldset>
+
+            <div class="editlinks">
+              <a href="cabinet_step1.html">Редактировать данные</a> | <a href="#" onClick="return window.confirm('Вы действительно уверены, что хотите полностью удалить этот проект?');">Удалить проект</a>
+            </div>
+
+            <legend class="title">Секция: <span>Мобильные приложения<span></legend>
+
+            <p class="notify"><span>Название проекта:</span> Project Name</p>
+            <p class="notify"><span>Название команды:</span> Team Name</p>
+            <p class="notify"><span>Краткое описание проекта:</span></p>
+
+            <p class="notify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae illo dolorem quia commodi, suscipit voluptas eaque veritatis. Dolorem facere nihil, repellat blanditiis rem, id sunt ut velit alias, vitae sed.</p>
+
+          </fieldset>
+
+          <fieldset>
+
+            <div class="editlinks">
+              <a href="cabinet_step2.html">Добавить участника</a>
+            </div>
+
+            <legend class="title">Участники проекта</legend>
+            <table>
+              <tr>
+                <td>
+                  Капитан команды<br />
+                  <a href="cabinet_step2.html" title="Редактировать">Марат Николаевич Ускенбаев</a>
+                </td>
+                <td>
+                  info@info.kz<br />
+                  +7 707 7852010
+                </td>
+                <td>
+                  Казахстан<br />
+                  Алматы
+                </td>
+                <td>
+                  Британский Университет
+                </td>
+                <td><a href="cabinet_step2.html" class="button" title="Удалить">×</a></td>         
+                </tr>
+              <tr>
+                <td>
+                  <a href="#" title="Редактировать">Марат Николаевич Ускенбаев</a>
+                </td>
+                <td>
+                  superinfo@info.kz<br />
+                  +7 707 7852010
+                </td>
+                <td>
+                  Казахстан<br />
+                  Алматы
+                </td>
+                <td>
+                  Британский Университет
+                </td>
+                <td><a href="#" class="button" title="Удалить">×</a></td>           
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" title="Редактировать">Марат Николаевич Ускенбаев</a>
+                </td>
+                <td>
+                  superinfo@info.kz<br />
+                  +7 707 7852010
+                </td>
+                <td>
+                  Казахстан<br />
+                  Алматы
+                </td>
+                <td>
+                  Британский Университет
+                </td>
+                 <td><a href="#" class="button" title="Удалить">×</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" title="Редактировать">Марат Николаевич Ускенбаев</a>
+                </td>
+                <td>
+                  superinfo@info.kz<br />
+                  +7 707 7852010
+                </td>
+                <td>
+                  Казахстан<br />
+                  Алматы
+                </td>
+                <td>
+                  Британский Университет
+                </td>
+                <td><a href="#" class="button" title="Удалить">×</a></td>            
+              </tr>
+            </table>
+          </fieldset>
+
+        </div>
+        <div class="transpboard">
+
+          <label for="team_name">Выберите секцию</label> 
+          <select>
+            <option selected>Информационные технологии</option>
+            <option>Секция 2</option>
+            <option>Секция 3</option>
+          </select>
+
+          <input id="submit" type="submit" value="+ Добавить проект" />
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="action">
+      <div class="action__tx">
+        <mark>Если у тебя нет команды</mark>
+        <p>То ты можешь найти ее на HackDay.  Жми на кнопку и регистрируйся! </p>
+        <a target="_blank" href="http://hackday.ru/almaty2015">Зарегистрироваться</a>
+      </div>
+      <i class="action__man"></i>
+    </section>
+
+
+
+    <section class="groups">
+      <div class="wrapper">
+        <div class="groups__title">
+           Подписывайся на HackDay и будь <br />
+          в центре событий
+        </div>
+        <div class="groups__box">
+
+          <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+          <!-- VK Widget -->
+          <div id="vk_groups"></div>
+          <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 0, width: "480", height: "225", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 51905207);
+          </script>
+
+        </div>
+        <div class="groups__box">
+          <div class="fb-page" data-href="https://www.facebook.com/hackdaykz" data-width="480" data-height="225" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/hackdaykz"><a href="https://www.facebook.com/hackdaykz">HackDay Kazakhstan</a></blockquote></div></div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- /.content -->
+
+
+<%- include parts/footer.ejs %>

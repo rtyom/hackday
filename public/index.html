@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+
+<html lang="en-EN">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--
+    TODO
+    no scale no resize no zoom for mob devices
+    if adaptive - enable, else - remove
+  -->
+  <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"> -->
+  <!-- IE no comp mode -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta http-equiv="msthemecompatible" content="no">
+  <!-- Force cleartype -->
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- No phone num detection -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+  <!-- Meta -->
+  <title>2-3 мая HackDay 2015 в Алматы </title>
+  <meta name="description" content="крупнейший в СНГ ежегодный Фестиваль идей, где молодые специалисты в креативной и неформальной среде превращают свои идеи в работающие стартапы, приглашает тебя!">
+
+  <meta property="og:title" content="2-3 мая HackDay 2015 в Алматы" />
+  <meta property="og:description" content="крупнейший в СНГ ежегодный Фестиваль идей, где молодые специалисты в креативной и неформальной среде превращают свои идеи в работающие стартапы, приглашает тебя!" />
+  <meta property="og:image" content="img/social.jpg" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+
+  <script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-43077912-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
+
+<body>
+
+  <div style="position:absolute; left: -99999px;">
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 958883264;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/958883264/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter29863544 = new Ya.Metrika({id:29863544,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/29863544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  </div>
+  
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<form id="popup_reg" class="white-popup-block mfp-hide">
+	<div class="title">Секция: <mark></mark></div>
+
+	<fieldset style="border:0;">
+		<p>Регистрация на HackDay<br /> является обязательной для всех участников.</p>
+		<ol>
+			<li>	
+				<input id="email" name="email" type="text"  placeholder="E-mail" autofocus="">
+				<span id="email_err" class="throw_error"></span>
+			</li>
+			<li>
+				<input id="submit" type="submit" value="Зарегистрировать проект" />
+				<div id="error_msg"></div>
+			</li>
+			<li>После регистрации на указанный E-mail прийдет пароль для регистрации.</li>
+		</ol>
+	</fieldset>
+
+	<div id="success"><b>Спасибо!</b><br /> На ваш E-mail отправлено письмо с паролем для дальнейшей регистрации проекта.!</div>
+</form>
+<form id="popup_auth" class="white-popup-block mfp-hide">
+	<div class="title">Авторизация</div>
+	<fieldset style="border:0;">
+		<ol>
+			<li>	
+				<input id="email" name="email" type="email" required="" placeholder="E-mail"  autofocus="" />
+				<span id="email_err" class="throw_error"></span>
+			</li>
+			<li>	
+				<input id="password" name="password" type="password" required="" placeholder="Пароль" />
+				<span id="password_err" class="throw_error"></span>
+			</li>			
+			<li>
+			<li>
+				<input type="checkbox" class="checkbox" id="save" />
+				<label id="save_label" for="checkbox">Запомнить меня</label> 
+			</li>
+				<!-- <input type="button" name="section_name" id="section_name" value="" /> -->
+				<input id="submit" type="submit" value="Войти" />
+				<div id="error_msg"></div>
+			</li>
+		</ol>
+	</fieldset>
+	<div class="more_links">
+		<a href="#">Забыли пароль</a>
+		<a href="#popup_reg" data-text="Любая" class="section__go">Зарегистрировать проект</a></a>
+	</div>
+		<div id="success">Вход выполнен!</div>
+</form>
+
+  <header class="header">
+    
+    <div class="wrapper">
+      <a href="/"><i class="header__logo"></i></a>
+
+
+
+      <div class="header__nav">
+
+      <ul id="menu">
+        <li><a href="#">Секции</a></li>
+        <li>
+          <a href="#">Прoграмма</a>
+          <ul>
+            <li><a href="#">Mio profilo 1 erfer rere</a></li>
+            <li><a href="#">Mio profilo 2 e</a></li>
+            <li><a href="#">Mio profilo 3</a></li>
+            <li><a href="#">Mio profilo 4 eerr</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Участники</a></li>
+        <li><a href="#">Спикеры</a></li>
+      </ul>
+            
+        <div class="header__social social">
+          <a target="_blank" href="https://www.facebook.com/hackdaykz" class="social__fb"></a>
+          <a target="_blank" href="https://vk.com/hackdayalmaty" class="social__vk"></a>
+          <!-- <a target="_blank" href="" class="social__ig"></a> -->
+        </div>
+
+        <span class="social__tag">#hackdaykz</span>
+        <a id="auth" href="#popup_auth" class="social__tag social__tag--red">Личный кабинет</a>
+      
+        <!-- <div class="header__lang">
+          <span>KZ</span>
+          <a href="ru.html">RU</a>
+        </div> -->
+      
+      </div>
+    </div>
+
+  </header><!-- /.header --> 
+
+
+
+  <main class="body">
+
+    <section class="intro">
+      <div class="wrapper">
+        
+        <div class="intro__img"></div>
+
+        <div class="intro__tx">
+          <div class="intro__tx_1">Представляет</div>
+          <div class="intro__tx_2">пятый юбилейный</div>
+          <div class="intro__tx_3">От идеи до прототипа за 24 часа!</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="info">
+      <div class="wrapper">
+
+        <div class="info__l">
+          <span class="info__title">Что?</span>
+          <p>
+            Hackday - это крупнейший в СНГ ежегодный <mark>Фестиваль идей</mark>, где молодые специалисты в креативной и неформальной среде превращают свои идеи в работающие стартапы. 
+          </p>
+        </div>
+        <div class="info__r">
+          <span class="info__title">Где и когда?</span>
+          <span class="info__date">2-3 мая</span>
+          <p>
+            Алматы, Almaty Towers, Коворкинг <a href="http://biznes-fabrika.kz/coworking/" target="_blank">“Бизнес Фабрика”</a> Байзакова 280, <a target="_blank" href="https://www.google.com/maps/place/Almaty+Tower,+Baizakov+St+280,+Almaty,+Kazakhstan/@43.2371691,76.9151437,18z/data=!4m7!1m4!3m3!1s0x3883692d0a012c17:0x6c0797355ba10366!2sAlmaty+Tower,+Baizakov+St+280,+Almaty,+Kazakhstan!3b1!3m1!1s0x3883692d0a012c17:0x6c0797355ba10366">смотреть на карте</a>
+          </p>
+        </div>
+        
+        <i class="info__man"></i>
+
+      </div>
+    </section>
+
+
+    <section class="video">
+      <iframe class="video__source" src="//www.youtube.com/embed/eCwiijQ7Gwk?controls=0&showinfo=0&autohide=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3" frameborder="0"></iframe>
+      <div class="video__gag">
+        <button class="video__play"></button>
+      </div>
+    </section>
+
+
+
+    <section class="sections">
+      <div class="wrapper">
+        <div class="sections__title">
+          Принимай участие в секциях HackDay
+        </div>
+        <div class="sections__line">
+        
+          <div class="section">
+            <div class="section__header">
+              <i class="section__ic section__ic--it"></i>
+              <div class="section__title"><span>
+                  Информационные <br /> технологии
+                </span>
+                <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>
+              </div>
+            </div>
+            <!-- <div class="section__tx">
+              <p>Номинация как сильный наркотик – один раз получив от</p>
+              <p>нее удовольствие, начинаешь употреблять ее все чаще и чаще,</p>
+              <p>и в итоге, не в состоянии себя контролировать.</p>
+            </div> -->
+
+            <a href="#popup_reg" data-text="Информационные технологии" class="section__go">Зарегистрироваться</a>
+
+          </div>
+
+          <div class="section">
+            <div class="section__header">
+              <i class="section__ic section__ic--content"></i>
+              <div class="section__title"><span>
+                  Контент <br>и медиа</span>
+                <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>   
+              </div>          
+            </div>
+
+            <a href="#popup_reg" data-text="Контент и медиа" class="section__go">Зарегистрироваться</a>
+
+          </div>
+
+          <div class="section">
+            <div class="section__header">
+              <i class="section__ic section__ic--movie"></i>
+              <div class="section__title"><span>
+                  Кино <br>и видео</span>                
+                  <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>   
+              </div>          
+            </div>
+
+            <a href="#popup_reg" data-text="Кино и видео" class="section__go">Зарегистрироваться</a>
+          </div>
+        
+        </div>
+
+        <div class="sections__line">
+
+          <div class="section">
+            <div class="section__header">
+              <i class="section__ic section__ic--mobile"></i>
+              <div class="section__title"><span>
+                  Мобильные <br /> Приложения</span>
+                <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>   
+              </div>          
+            </div>
+
+            <a href="#popup_reg" data-text="Мобильные Приложения" class="section__go">Зарегистрироваться</a>
+          </div>
+          
+          <div class="section">
+            <div class="section__header">
+              <i class="section__ic section__ic--photo"></i>
+              <div class="section__title"><span>
+                  Фотография</span>
+                <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>   
+              </div>          
+            </div>
+
+            <a href="#popup_reg" data-text="Фотография" class="section__go">Зарегистрироваться</a>
+          </div>
+
+          <div class="section">
+            <div class="section__header">
+              <i class="section__ic section__ic--design"></i>
+              <div class="section__title"><span>
+                  Дизайн <br>
+                  и анимация</span>
+                 <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>   
+              </div>          
+            </div>
+
+            <a href="#popup_reg" data-text="Дизайн и анимация" class="section__go">Зарегистрироваться</a>
+          </div>
+        </div>
+
+        <div class="sections__line">
+
+          <div class="section">
+            <span class="section__lbl"></span>          
+            <div class="section__header">
+              <i class="section__ic section__ic--mobile"></i>
+              <div class="section__title"><span>
+                  Новая <br />Категория</span>
+                <span  class="links"><a href="#">Подробнее</a> | <a href="#">Спикеры</a></span>   
+              </div>          
+            </div>
+            
+             <a href="#popup_reg" data-text="Новая категория" class="section__go">Зарегистрироваться</a>
+          </div>   
+
+        </div>
+
+<!--         <div class="sections__line">
+  <a target="_blank" href="http://yvision.kz/post/497641" class="section__btn">Cпецноминации от Samsung Galaxy S6 edge, АО "НИТ" и Dr. Web</a>
+</div> -->
+
+
+      </div>
+    </section>
+
+    <section class="advert1">
+      <div class="wrapper">
+        <img src="img/column1.png">
+        <div class="advert__title">
+          Инновационный кластер Tech Garden
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fuga earum eveniet, voluptatem pariatur et iusto reprehenderit nostrum assumenda! Voluptatibus quasi dignissimos soluta error aperiam facilis recusandae illum perferendis nobis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fuga earum eveniet, voluptatem pariatur et iusto reprehenderit nostrum assumenda! Voluptatibus quasi dignissimos soluta error aperiam facilis recusandae illum perferendis nobis.</p>        
+      </div>
+    </section>
+
+    <section class="action2">
+      <div class="action2__tx">
+        <mark>Программа HackDay</mark>
+        <p> 
+          Во сколько начнется HackDay и в какое время приходить <br />на регистрацию можно узнать здесь
+          </p>
+        <a target="_blank" href="http://yvision.kz/post/497078">Посмотреть</a>
+      </div>
+    </section>
+
+
+
+    <section class="photo">
+      <div class="photo__header">
+        <div class="wrapper">
+          HackDay в лицах
+          <i class="photo__man"></i>
+        </div>
+      </div>
+      <div class="photo__gallery gallery">
+        <div class="gallery__line gallery__1stline">
+          <a href="img/photos/1.jpg"><img src="img/photos/1.jpg"></a>
+          <a href="img/photos/2.jpg"><img src="img/photos/2.jpg"></a>
+          <a href="img/photos/3.jpg"><img src="img/photos/3.jpg"></a>
+          <a href="img/photos/4.jpg"><img src="img/photos/4.jpg"></a>
+          <a href="img/photos/5.jpg"><img src="img/photos/5.jpg"></a>
+          <a href="img/photos/6.jpg"><img src="img/photos/6.jpg"></a>
+        </div>
+        <div class="gallery__line gallery__2ndline">
+          <a href="img/photos/7.jpg"><img src="img/photos/7.jpg"></a>
+          <a href="img/photos/8.jpg"><img src="img/photos/8.jpg"></a>
+          <a href="img/photos/9.jpg"><img src="img/photos/9.jpg"></a>
+          <a href="img/photos/10.jpg"><img src="img/photos/10.jpg"></a>
+          <a href="img/photos/11.jpg"><img src="img/photos/11.jpg"></a>
+          <a href="img/photos/12.jpg"><img src="img/photos/12.jpg"></a>
+        </div>
+        <div class="gallery__line gallery__3rdline">
+          <a href="img/photos/1.jpg"><img src="img/photos/1.jpg"></a>
+          <a href="img/photos/2.jpg"><img src="img/photos/2.jpg"></a>
+          <a href="img/photos/3.jpg"><img src="img/photos/3.jpg"></a>
+          <a href="img/photos/4.jpg"><img src="img/photos/4.jpg"></a>
+          <a href="img/photos/5.jpg"><img src="img/photos/5.jpg"></a>
+          <a href="img/photos/6.jpg"><img src="img/photos/6.jpg"></a>
+        </div>      
+      </div>
+    </section>
+
+    <section class="advert2">
+      <div class="wrapper">
+        <img src="img/column2.png">
+        <div class="advert__title">
+          Казкоммерцбанк
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fuga earum eveniet, voluptatem pariatur et iusto reprehenderit nostrum assumenda! Voluptatibus quasi dignissimos soluta error aperiam facilis recusandae illum perferendis nobis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fuga earum eveniet, voluptatem pariatur et iusto reprehenderit nostrum assumenda! Voluptatibus quasi dignissimos soluta error aperiam facilis recusandae illum perferendis nobis.</p>        
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="wrapper" align="center">
+        <div class="news__title">
+          Новости</div>
+
+          <div class="news__line">
+            <div class="news_item">
+            <img src="img/photos/6.jpg">
+            <a href="news_item.html">Новость 1</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laborum, porro ex optio quibusdam atque voluptatibus voluptatem hic, beatae totam eveniet at, fuga ipsa officia voluptatum mollitia. Molestiae, sit, eum.</p>
+            </div>
+            <div class="news_item">
+            <img src="img/photos/5.jpg">
+           <a href="news_item.html">Новость 2</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laborum, porro ex optio quibusdam atque voluptatibus voluptatem hic, beatae totam eveniet at, fuga ipsa officia voluptatum mollitia. Molestiae, sit, eum.</p>
+            </div>
+            <div class="news_item">
+            <img src="img/photos/4.jpg">
+           <a href="news_item.html">Новость 3</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laborum, porro ex optio quibusdam atque voluptatibus voluptatem hic, beatae totam eveniet at, fuga ipsa officia voluptatum mollitia. Molestiae, sit, eum.</p>
+            </div>
+          </div>
+
+          <a href="news.html" class="news__go">Больше новостей</a>
+
+        </div>
+      </section>
+
+    <section class="guests">
+      <div class="wrapper">
+        <div class="guests__title">Приглашенные гости</div>
+        <div class="guests__list">
+          <a href="http://tjournal.ru/" target="_blank"><img src="img/guest-1.png"></a>
+
+          <a target="_blank" href="http://www.games-tv.ru/ "><img height="100" src="img/partner-13.png"></a>
+          <a target="_blank" href="http://ztb.kz/"><img src="img/guest-3.png"></a>
+          <a target="_blank" href="https://vk.com/queex"><img height="100" src="img/partner-12.png"></a>
+          <a href="http://sxodim.kz/" target="_blank">
+            <img src="img/partner-10.png">
+          </a>
+        </div>
+        <div class="guests__list guests__list--second">
+          <a href="http://mkechinov.ru/" target="_blank">
+            <img src="img/partner-3.png">
+          </a>
+          <a href="http://rocketfirm.com/" target="_blank">
+            <img src="img/partner-15.png">
+          </a>
+          <a href="http://www.iidf.ru/" target="_blank">
+            <img height="60" src="img/partner-16.png">
+          </a>
+          <a href="http://www.walletone.com/" target="_blank">
+            <img height="100" src="img/partner-17.png">
+          </a>
+       
+        </div>
+        <i class="guests__man"></i>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrapper">
+        <div class="about__tx">
+          <div class="about__title">О секциях</div>
+        </div>
+        
+        <div class="about__box">
+          <div class="about__box__title"><span>Информационные технологии</span></div>
+          <i class="section__ic section__ic--it"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque neque eveniet vitae temporibus obcaecati magni, quibusdam. Rem blanditiis, aspernatur at molestiae quasi nisi voluptate! Quae numquam possimus sit ipsa obcaecati.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque neque eveniet vitae temporibus obcaecati magni, quibusdam. Rem blanditiis, aspernatur at molestiae quasi nisi voluptate! Quae numquam possimus sit ipsa obcaecati.</p>
+
+          <fieldset>
+            <legend>Спикеры:</legend>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Akhmetov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Сергей Ахметов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <div class="about__nom">Номинации:</div>
+          <div class="about__nombox">
+            <div class="about__nombox__name"><mark>1-3 места</mark> - общее голосование</div>
+            <div class="about__nombox__name"><mark>Специальная номинация</mark> от партнера проекта</div>
+          </div>
+
+        </div>
+
+<!--  -->
+
+        <div class="about__box">
+          <div class="about__box__title"><span>Мобильные приложения</span></div>
+          <i class="section__ic section__ic--mobile"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque neque eveniet vitae temporibus obcaecati magni, quibusdam. Rem blanditiis, aspernatur at molestiae quasi nisi voluptate! Quae numquam possimus sit ipsa obcaecati.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque neque eveniet vitae temporibus obcaecati magni, quibusdam. Rem blanditiis, aspernatur at molestiae quasi nisi voluptate! Quae numquam possimus sit ipsa obcaecati.</p>
+
+          <fieldset>
+            <legend>Спикеры:</legend>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__box__item">
+              <div class="about__box__img">
+                <img src="img/ava/Kechinov.png">
+              </div>
+              <div class="about__box__cnt">
+                <div class="about__box__name">
+                  <a href="#">Михаил Кечинов</a>
+                  <p>Краткая информация о спикере</p>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <div class="about__nom">Номинации:</div>
+          <div class="about__nombox">
+            <div class="about__nombox__name"><mark>1-3 места</mark> - общее голосование</div>
+            <div class="about__nombox__name"><mark>Специальная номинация</mark> от партнера проекта</div>
+          </div>
+
+        </div>
+
+<!--  -->
+
+
+
+      </div>
+    </section>
+
+    <section class="orgs">
+      <div class="wrapper">
+        
+        <div class="orgs__line orgs__sTop">
+          <div class="orgs__item--org">
+            <span class="orgs__item__title">Организатор</span>
+            <a href="http://www.iitu.kz/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-2.png">
+            </a>
+          </div>
+          
+          <div class="orgs__item--gen">
+            <span class="orgs__item__title">Генеральный партнер</span>
+            <a href="http://www.samsung.com/kz_ru/home/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-1.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="orgs__line orgs__top">
+
+          <span class="orgs__item__title">Партнеры</span>
+        
+          <div class="orgs__item ">
+            <a href="http://mkechinov.ru/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-3.png">
+            </a>
+          </div>
+        
+          <div class="orgs__item">
+            <a href="http://techgarden.kz/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-4.png">
+            </a>
+          </div>
+        
+          <div class="orgs__item">
+            <a href="http://belochka.kz/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-5.png">
+            </a>
+          </div>
+        
+          <div class="orgs__item">
+            <a href="http://www.nitec.kz/index.php/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-6.png">
+            </a>
+          </div>
+        
+          <div class="orgs__item">
+            <a href="http://www.raimbek-bottlers.kz/" class="orgs__item__lk" target="_blank">
+              <img src="img/partner-14.png" height="100">
+            </a>
+          </div>
+        
+        </div>
+        
+        <div class="orgs__line orgs__bot">
+          <div class="orgs__item__title">Информационные партнеры</div>
+          <a href="http://ztb.kz/" target="_blank" class="orgs__item">
+            <img src="img/partner-7.png">
+          </a>
+          <a href="https://kivvi.kz/" target="_blank" class="orgs__item">
+            <img src="img/partner-8.png">
+          </a>
+          <a href="http://yvision.kz/" target="_blank" class="orgs__item">
+            <img src="img/partner-9.png">
+          </a>
+          <a href="http://sxodim.kz/" target="_blank" class="orgs__item">
+            <img src="img/partner-10.png">
+          </a>
+          <a href="http://namba.kz/" target="_blank" class="orgs__item">
+            <img src="img/partner-11.png">
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="action">
+      <div class="action__tx">
+        <mark>Если у тебя нет команды</mark>
+        <p>То ты можешь найти ее на HackDay.  Жми на кнопку и регистрируйся! </p>
+        <a target="_blank" href="http://hackday.ru/almaty2015">Зарегистрироваться</a>
+      </div>
+      <i class="action__man"></i>
+    </section>
+
+
+
+    <section class="groups">
+      <div class="wrapper">
+        <div class="groups__title">
+           Подписывайся на HackDay и будь <br />
+          в центре событий
+        </div>
+        <div class="groups__box">
+
+          <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+          <!-- VK Widget -->
+          <div id="vk_groups"></div>
+          <script type="text/javascript">
+          VK.Widgets.Group("vk_groups", {mode: 0, width: "480", height: "225", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 51905207);
+          </script>
+
+        </div>
+        <div class="groups__box">
+          <div class="fb-page" data-href="https://www.facebook.com/hackdaykz" data-width="480" data-height="225" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/hackdaykz"><a href="https://www.facebook.com/hackdaykz">HackDay Kazakhstan</a></blockquote></div></div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- /.content -->
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__col footer__col-1">
+        <i class="footer__logo"></i>
+        <span class="footer__copy">© HackDay Kazakhstan, 2015 </span>
+      </div>
+      <div class="footer__col footer__col-2">
+        <div class="footer__phones">
+          <mark>Контакты</mark>
+          <p>(727) 244 51 25,</p> 
+          <p>(727) 330 85 62</p>
+        </div>
+      </div>
+      <div class="footer__col footer__col-3">
+        <div class="footer__social">
+          <a target="_blank" href="http://hackday.ru/almaty2015">hackday2015.kz</a>
+          <div class="social">
+            <a target="_blank" href="https://www.facebook.com/hackdaykz" class="social__fb"></a>
+            <a target="_blank" href="https://vk.com/hackdayalmaty" class="social__vk"></a>
+            <!-- <a href="" class="social__ig"></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="footer__man">
+        <span><span>Регистрация <br> на HackDay</span></span>
+      </div>
+    </div>
+  </footer><!-- /.footer -->
+
+
+
+  <!-- Vendor JS -->
+  <script src="js/vendor.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="js/all.js"></script>
+
+
+</body>
+
+</html>
