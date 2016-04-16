@@ -51,6 +51,35 @@ $(document).ready(function(){
       event.preventDefault(); //Prevent the default submit
   });
 
+//// Password recovery popup form validation
+/////////////////////////////////////////
+  $('#popup_pwd').submit(function(event) { //Trigger on form submit
+    $('.throw_error').empty(); //Clear the messages first
+
+    var errmsg = 'Проверьте правильность заполнения поля';
+    var postForm = $(this).serialize();
+
+    $.ajax({ //Process the form using $.ajax()
+      type    : 'POST', //Method type
+      url     : 'process.php', //Your form processing file url
+      data    : postForm, //Forms name
+      dataType  : 'json',
+      success   : function(data) {
+        
+      if (!data.success) { //If fails
+        if (data.errors.email) { //Returned if any error from process.php
+          $('#email_err').html(errmsg); //Throw relevant error
+        }
+        $('#error_msg').html(data.errors.other); //Main error msg
+      } else {
+          $('fieldset').hide();
+          $('#success').show(); //If successful, than throw a success message
+        }
+      }
+    });
+      event.preventDefault(); //Prevent the default submit
+  });
+
 //// Authentication popup form validation
 /////////////////////////////////////////
   $('#popup_auth').submit(function(event) { //Trigger on form submit
@@ -110,6 +139,30 @@ $(document).ready(function(){
       }
     });
       event.preventDefault(); //Prevent the default submit
+  });
+
+//// Password recovery popup
+/////////////////////////////////////////  
+  $('#pwd').click(function(){
+      var txt = $(this).data('text');
+      $('fieldset').show();
+      $('#success').hide('');
+  });
+
+  $('#pwd').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#email',
+
+    callbacks: {
+      beforeOpen: function() {
+        if($(window).width() < 700) {
+          this.st.focus = false;
+        } else {
+          this.st.focus = '#email';
+        }
+      }
+    }
   });
 
 //// Registration popup

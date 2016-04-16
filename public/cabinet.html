@@ -141,17 +141,35 @@
 				<input type="checkbox" class="checkbox" id="save" />
 				<label id="save_label" for="checkbox">Запомнить меня</label> 
 			</li>
-				<!-- <input type="button" name="section_name" id="section_name" value="" /> -->
 				<input id="submit" type="submit" value="Войти" />
 				<div id="error_msg"></div>
 			</li>
 		</ol>
 	</fieldset>
 	<div class="more_links">
-		<a href="#">Забыли пароль</a>
+		<a href="#popup_pwd" id="pwd">Забыли пароль</a>
 		<a href="#popup_reg" data-text="Любая" class="section__go">Зарегистрировать проект</a></a>
 	</div>
 		<div id="success">Вход выполнен!</div>
+</form>
+<form id="popup_pwd" class="white-popup-block mfp-hide">
+	<div class="title">Восстановление пароля</div>
+
+	<fieldset style="border:0;">
+		<ol>
+			<li>	
+				<input id="email" name="email" type="text"  placeholder="E-mail" autofocus="">
+				<span id="email_err" class="throw_error"></span>
+			</li>
+			<li>
+				<input id="submit" type="submit" value="Восстановить пароль" />
+				<div id="error_msg"></div>
+			</li>
+			<li>На зарегистрированный E-mail прийдет ваш пароль.</li>
+		</ol>
+	</fieldset>
+
+	<div id="success"><b>Спасибо!</b><br /> На ваш E-mail отправлено письмо с паролем!</div>
 </form>
 
   <header class="header">

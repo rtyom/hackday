@@ -238,15 +238,9 @@ gulp.task('watch', function() {
 gulp.task('bs-sync', function() {
   notify: true,
   browserSync({
-    server: {
-      baseDir: dir.public,
-      directory: true,
-      index: "index.html"
-    },
+    proxy: "hackday.io",
     logLevel: "debug",
-    logPrefix: "BrowserSync",
-    online: false,
-    port : 7777
+    logPrefix: "BrowserSync"
   });
 });
 

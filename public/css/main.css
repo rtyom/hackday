@@ -2287,68 +2287,82 @@ a.section__btn:hover {
   vertical-align: middle;
 }
 #popup_reg,
-#popup_auth {
+#popup_auth,
+#popup_pwd {
   text-align: center;
 }
 #popup_reg #success,
-#popup_auth #success {
+#popup_auth #success,
+#popup_pwd #success {
   display: none;
   font-size: 18px;
   padding-bottom: 20px;
 }
 #popup_reg #success b,
-#popup_auth #success b {
+#popup_auth #success b,
+#popup_pwd #success b {
   color: #f15357;
   padding-bottom: 10px;
 }
 #popup_reg .throw_error,
-#popup_auth .throw_error {
+#popup_auth .throw_error,
+#popup_pwd .throw_error {
   color: gray;
   font-size: 12px;
 }
 #popup_reg #error_msg,
-#popup_auth #error_msg {
+#popup_auth #error_msg,
+#popup_pwd #error_msg {
   color: red;
   font-weight: 500;
   font-size: 14px;
   padding: 10px 0 10px 0;
 }
 #popup_reg .title,
-#popup_auth .title {
+#popup_auth .title,
+#popup_pwd .title {
   font-size: 24px;
   font-weight: 400;
   padding-top: 15px;
   padding-bottom: 20px;
 }
 #popup_reg .title mark,
-#popup_auth .title mark {
+#popup_auth .title mark,
+#popup_pwd .title mark {
   color: #f15357;
 }
 #popup_reg p,
-#popup_auth p {
+#popup_auth p,
+#popup_pwd p {
   font-size: 18px;
   padding-bottom: 25px;
 }
 #popup_reg li,
-#popup_auth li {
+#popup_auth li,
+#popup_pwd li {
   padding-bottom: 25px;
 }
 #popup_reg li p,
-#popup_auth li p {
+#popup_auth li p,
+#popup_pwd li p {
   font-size: 14px;
 }
 #popup_reg li:last-child,
-#popup_auth li:last-child {
+#popup_auth li:last-child,
+#popup_pwd li:last-child {
   padding: 0;
 }
 #popup_reg input,
-#popup_auth input {
+#popup_auth input,
+#popup_pwd input {
   outline: none;
 }
 #popup_reg input#email,
 #popup_auth input#email,
+#popup_pwd input#email,
 #popup_reg input#password,
-#popup_auth input#password {
+#popup_auth input#password,
+#popup_pwd input#password {
   font-size: 20px;
   width: 90%;
   height: 57px;
@@ -2360,13 +2374,16 @@ a.section__btn:hover {
 }
 #popup_reg input#email:focus,
 #popup_auth input#email:focus,
+#popup_pwd input#email:focus,
 #popup_reg input#password:focus,
-#popup_auth input#password:focus {
+#popup_auth input#password:focus,
+#popup_pwd input#password:focus {
   box-shadow: none;
   outline: none;
 }
 #popup_reg input#save,
-#popup_auth input#save {
+#popup_auth input#save,
+#popup_pwd input#save {
   width: 20px;
   height: 20px;
   padding: 0;
@@ -2377,14 +2394,16 @@ a.section__btn:hover {
   *overflow: hidden;
 }
 #popup_reg #save_label,
-#popup_auth #save_label {
+#popup_auth #save_label,
+#popup_pwd #save_label {
   display: inline-block;
   padding-left: 15px;
   text-indent: -15px;
   font-size: 14px;
 }
 #popup_reg input#submit,
-#popup_auth input#submit {
+#popup_auth input#submit,
+#popup_pwd input#submit {
   border: 0;
   font-size: 20px;
   width: 307px;
@@ -2398,11 +2417,13 @@ a.section__btn:hover {
   border-radius: 5px;
 }
 #popup_reg input#submit:hover,
-#popup_auth input#submit:hover {
+#popup_auth input#submit:hover,
+#popup_pwd input#submit:hover {
   background-color: #ff6468;
 }
 #popup_reg .more_links,
-#popup_auth .more_links {
+#popup_auth .more_links,
+#popup_pwd .more_links {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2410,15 +2431,18 @@ a.section__btn:hover {
   padding-top: 20px;
 }
 #popup_reg .more_links a,
-#popup_auth .more_links a {
+#popup_auth .more_links a,
+#popup_pwd .more_links a {
   font-size: 12px;
 }
 #popup_reg .more_links a:first-child,
-#popup_auth .more_links a:first-child {
+#popup_auth .more_links a:first-child,
+#popup_pwd .more_links a:first-child {
   float: left;
 }
 #popup_reg .more_links a:last-child,
-#popup_auth .more_links a:last-child {
+#popup_auth .more_links a:last-child,
+#popup_pwd .more_links a:last-child {
   float: right;
 }
 .isa_info,

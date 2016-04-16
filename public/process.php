@@ -3,6 +3,15 @@
     $form_data = array(); //Pass back the data 
 
 
+    /*Pwd form fields validation
+    ///////////////////////////////
+    if (empty($_POST['email'])) { 
+        $errors['email'] = true;
+    }
+    $errors['other'] = 'Ошибка!';
+
+    */
+
     /*Reg form fields validation
     ///////////////////////////////
     if (empty($_POST['email'])) { 
