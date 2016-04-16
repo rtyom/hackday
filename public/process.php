@@ -8,17 +8,20 @@
     if (empty($_POST['email'])) { 
         $errors['email'] = true;
     }
+    $errors['other'] = 'Ошибка!';
+
     */
 
     // Auth form fields validation
     ///////////////////////////////
     if (empty($_POST['email'])) { 
-        $errors['text'] = true;
+        $errors['email'] = true;
     }
 
     if (empty($_POST['password'])) { 
-        $errors['text'] = true;
+        $errors['password'] = true;
     }
+    $errors['other'] = 'Ошибка!';
     
 
     /* Step1 fields validation
