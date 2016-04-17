@@ -1452,16 +1452,19 @@ box-shadow: 0px 7px 50px 1px rgba(0,0,0,0.41);
   }
   .about__nombox {
     width: 100%;
+    background-color: #fff;
+    padding-bottom: 140px;
+    border-bottom: 2px solid @red;
   }
   .about__nombox__name {
-    width:50%;
+    width:100%;
     padding:10px;
     float:left;
+    margin-bottom: 1px;    
     font-weight: 500;
     font-size: 18px;  
     background-color: #f4f5f7;
     mark { color: @red; }
-    &:last-child { background-color: #ececec; }
   }
 
   .about__tx {
@@ -1478,9 +1481,8 @@ box-shadow: 0px 7px 50px 1px rgba(0,0,0,0.41);
       font-weight: 400;
     } 
   .about__box {
-    margin-bottom: 50px;
-    padding-bottom: 70px;
-    border-bottom: 2px solid @red;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
 
     fieldset {
       margin-top: 15px;
@@ -1495,53 +1497,65 @@ box-shadow: 0px 7px 50px 1px rgba(0,0,0,0.41);
       padding: 10px;
     }
   }
-    .about__box__title {
-      font-size: 18px;
-      line-height: 21px;
-      font-weight: 500;
-      height: 21px;
-      position: relative;
-      text-align: left;
-      margin-bottom: 40px;
-      color: @red;
+  .about__box__title {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    height: 21px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 40px;
+    color: @red;
+  }
+  .about__box__item {
+    float: left;
+    width: 205px;
+    margin-left: 35px;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    } 
+  }
+  .about__box__img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-left: 36px;
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: block;
+      background-color: #ccc;
+      border: none;
     }
-    .about__box__item {
-      float: left;
-      width: 205px;
-      margin-left: 35px;
-      text-align: center;
+  }
+  .about__box__cnt {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .about__box__name {
+    line-height: 19px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    span { 
+          color: @red;
+        }
+    p {
+      font-size: 14px;
     }
-      .about__box__img {
-        height: 130px;
-        width: 130px;
-        border-radius: 50%;
-        border: 1px solid #cccccc;
-        padding: 4px;
-        margin-top: 3px;
-        margin-bottom: 10px;
-        margin-left: 36px;
-        img {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          display: block;
-          background-color: #ccc;
-          border: none;
-        }
-      }
-      .about__box__cnt {
-        font-size: 16px;
-        line-height: 36px;
-      }
-        .about__box__name {
-          line-height: 19px;
-          font-size: 16px;
-          margin-bottom: 10px;
-          display: block;
-          p {
-            font-size: 14px;
-          }
-        }
+  }
+  .about__box__descr {
+    padding: 20px;
+    display: none;
+    color: gray;
+  }
 
 
 .speakers {

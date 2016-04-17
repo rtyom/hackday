@@ -132,6 +132,7 @@ gulp.task('ejs', function() {
     }))
     .pipe(plugins.ejs())
     .pipe(gulp.dest(paths.public.html))
+    .pipe(browserSync.reload({stream:true}))
     .pipe(plugins.notify({
       title: 'Gulp',
       subtitle: 'success',
@@ -152,6 +153,7 @@ gulp.task('js', function() {
     .pipe(plugins.concat('all.js'))
     .pipe(plugins.sourcemaps.write('./'))
     .pipe(gulp.dest(paths.public.js))
+    .pipe(browserSync.reload({stream:true}))
     .pipe(plugins.notify({
       title: 'Gulp',
       subtitle: 'success',
