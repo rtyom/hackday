@@ -1380,6 +1380,7 @@ a.section__btn:hover {
   float: left;
 }
 .guests {
+  display: none;
   min-height: 370px;
   padding-bottom: 50px;
   background-color: #ececec;
