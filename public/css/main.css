@@ -672,7 +672,7 @@ a.social__tag {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  font: bold 12px "Ubuntu", sans-serif;
+  font: normal 12px "Ubuntu", sans-serif;
 }
 #menu li:hover > a {
   color: #f4554f;
@@ -718,7 +718,7 @@ a.social__tag {
   white-space: nowrap;
   float: none;
   text-transform: none;
-  color: #8f8f8f;
+  color: gray;
   border-left: 4px solid #fff;
   font-size: 13px;
 }
@@ -795,7 +795,7 @@ a.social__tag {
 }
 .intro {
   margin-top: 76px;
-  height: 600px;
+  height: 500px;
   width: 100%;
   background-color: #000;
   background-image: url("../img-dsgn/pattern.png");
@@ -1480,7 +1480,8 @@ a.section__btn:hover {
 }
 .orgs__item--org {
   display: block;
-  width: 100%;
+  float: left;
+  width: 50%;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -1505,12 +1506,15 @@ a.section__btn:hover {
 }
 .advert1,
 .advert2 {
-  height: 500px;
+  height: 300px;
 }
 .advert1 img,
 .advert2 img {
   float: left;
   margin-right: 50px;
+  display: block;
+  padding-bottom: 100px;
+  padding-top: 70px;
 }
 .advert1 p,
 .advert2 p {
@@ -1521,7 +1525,7 @@ a.section__btn:hover {
 .advert2 .advert__title {
   font-size: 25px;
   font-weight: 500;
-  padding-top: 117px;
+  padding-top: 50px;
   padding-bottom: 10px;
 }
 .advert1 {
