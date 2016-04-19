@@ -794,7 +794,8 @@ a.social__tag {
   font-size: 14px;
 }
 .intro {
-  padding-top: 76px;
+  margin-top: 20px;
+  padding-top: 50px;
   height: 550px;
   width: 100%;
   background-color: #000;
@@ -803,54 +804,27 @@ a.social__tag {
   background-position: top left;
   position: relative;
 }
-.intro__img {
-  position: absolute;
-  left: 50%;
-  margin-left: -655px;
-  top: 67px;
-  width: 642px;
-  height: 524px;
-  background-image: url("../img-dsgn/s6.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-}
 .intro__tx {
-  display: inline-block;
-  vertical-align: middle;
-  width: 473px;
-  height: 425px;
-  background: url('../img-dsgn/_sprite.png') -450px 0px no-repeat;
-  float: right;
-  margin-right: 17px;
-  margin-top: 98px;
-  position: relative;
-}
-.intro__tx > div {
-  line-height: 1;
   position: absolute;
+  width: 1000px;
+  height: 496px;
+  background-image: url("../img-dsgn/hd_banner_bg.png");
   color: #fff;
 }
 .intro__tx_1 {
-  left: 339px;
-  top: 40px;
-  font-size: 20px;
+  position: absolute;
+  left: 565px;
+  top: 58px;
+  font-size: 30px;
   text-transform: lowercase;
 }
 .intro__tx_2 {
-  left: 90px;
-  width: 300px;
-  top: 210px;
-  text-transform: uppercase;
-  font-size: 21px;
+  position: absolute;
+  left: 45px;
+  width: 350px;
+  top: 275px;
+  font-size: 20px;
   text-align: center;
-}
-.intro__tx_3 {
-  font-weight: 500;
-  font-size: 29px;
-  width: 100%;
-  text-align: center;
-  left: 0;
-  top: 285px;
 }
 .info {
   padding-top: 70px;
@@ -1504,17 +1478,14 @@ a.section__btn:hover {
   font-weight: 400;
   text-align: center;
 }
-.advert1,
-.advert2 {
-  height: 300px;
-}
 .advert1 img,
 .advert2 img {
   float: left;
   margin-right: 50px;
   display: block;
   padding-bottom: 100px;
-  padding-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 110px;
 }
 .advert1 p,
 .advert2 p {
@@ -1527,6 +1498,10 @@ a.section__btn:hover {
   font-weight: 500;
   padding-top: 50px;
   padding-bottom: 10px;
+}
+.advert1 .advert__text,
+.advert2 .advert__text {
+  padding-bottom: 50px;
 }
 .advert1 {
   background-color: #f5f5f5;
