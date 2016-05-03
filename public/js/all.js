@@ -217,9 +217,10 @@ $(document).ready(function(){
 //// Speakers section 
 /////////////////////////////////////////
 $('.about__box__item').click(function() {
-    $('.about__box__descr').hide();
-    $('.about__box__img').css('background-color','white');
-    $('.about__box__name > span').css('color', '#f15357');
+    $cat = $(this).parents('.about__box').attr( "id");
+    $('#'+$cat+' div.about__box__descr').hide();
+    $('#'+$cat+' div.about__box__img').css('background-color','white');
+    $('#'+$cat+' div.about__box__name > span').css('color', '#f15357');
     $('#'+this.id).find('.about__box__img').css('background-color', '#ccc');
     $('#'+this.id).find('span').css('color', 'red');    
     $('#'+this.id+'_descr').fadeIn('slow');
